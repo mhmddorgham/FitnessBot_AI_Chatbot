@@ -8,7 +8,6 @@ from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 from flask import Flask, render_template, request, jsonify
 from functions import calculate_bmi, create_workout_plan_with_BMI, create_diet_plan_with_BMI, create_workout_plan, create_diet_plan
-
 app = Flask(__name__)
 app.secret_key = "my-secret-key"
 
@@ -70,6 +69,7 @@ def index():
 
 @app.route("/get", methods=["GET", "POST"])
 def chat():
+    print("Inside Chat function")
     msg = request.form["msg"]
     input = msg
     ints = predict_class(input)
