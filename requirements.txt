@@ -3,3 +3,4 @@ gunicorn
 numpy
 nltk
 tensorflow
+Flask-Cors
