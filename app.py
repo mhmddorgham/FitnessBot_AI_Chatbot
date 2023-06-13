@@ -10,7 +10,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 from functions import calculate_bmi, create_workout_plan_with_BMI, create_diet_plan_with_BMI, create_workout_plan, create_diet_plan
 app = Flask(__name__)
-
+nltk.download('punkt')
 app.secret_key = "my-secret-key"
 cors = CORS(app)
 
