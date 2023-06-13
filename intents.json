@@ -1,0 +1,259 @@
+{
+  "intents": [
+      {
+          "tag": "greeting",
+          "patterns": [
+              "Hi",
+              "Hello",
+              "Hey",
+              "Hi there",
+              "Hello there",
+              "How are you", 
+              "Is anyone there?", 
+               "Good day",
+                "Whats up",
+                 "Good morning",
+                 "Good evening"
+          ],
+          "responses": [
+              "Hello! How can I help you today?",
+              "Hi there! How can I assist you with your fitness goals today?",
+              "Hey! How can I help you achieve a healthier lifestyle?",
+              "Hi! What can I do for you today?",
+              "Good to see you again!",
+               "Hi there, how can I help?",
+               "Good morning, how can I help?",
+               "Good evening, how can I help?"
+          ]
+      },
+      {
+          "tag": "goodbye",
+          "patterns": [
+              "Bye",
+              "Goodbye",
+              "See you later",
+              "See you soon"
+          ],
+          "responses": [
+              "Goodbye! Have a great day!",
+              "See you later! Keep up the good work!",
+              "Take care and have a great day!",
+              "See you soon! Stay committed to your goals!"
+          ]
+      },
+      {
+          "tag": "thanks",
+          "patterns": [
+              "Thanks",
+              "Thank you",
+              "Appreciate it"
+          ],
+          "responses": [
+              "You're welcome!",
+              "Glad I could help!",
+              "Anytime!",
+              "No problem!"
+          ]
+      },
+      {
+          "tag": "bot_name",
+          "patterns": [
+              "What's your name?",
+              "What do I call you?",
+              "Can you tell me your name?",
+              "How are you"
+          ],
+          "responses": [
+              "My name is FitnessBot. How can I assist you today?",
+              "I'm FitnessBot. I help you following a healthy lifestyle",
+              "You can call me FitnessBot, your AI fitness trainer",
+              "I'm FitnessBot. I help people change their lifestyles by starting to diet and exercise"
+
+          ]
+      },
+      {
+        "tag": "bot_job",
+        "patterns": ["What do you do?", "What is your job?", "What is your mission?", "How can I use you?", "How can you help me"],
+        "responses": ["My job is to help you achieve your fitness goals by providing personalized workout plans, nutrition advice, and motivation.",
+                    "My mission is to make fitness accessible and enjoyable for everyone!",
+                     "You can use me by asking for workout recommendations, tracking your progress, or getting tips on healthy eating.",
+                    "I help people create diet and exercise plans to achieve their weight loss or weight gain goals  based on your BMI and your fitness level", 
+                    "I can help you in creating personalized workout and diet plans based on your BMI and your fitness level"]
+      },
+      {
+        "tag": "bot_creators",
+        "patterns": [
+            "Who made you?",
+            "Who created you?",
+            "Who developed you?",
+            "Who built you?",
+            "Who designed you?",
+            "Who programmed you?"
+        ],
+        "responses": [
+            "I was created by a group of students majoring in artificial intelligence at the British University in Dubai.",
+            "My creators are a team of students studying artificial intelligence at the British University in Dubai.",
+            "A group of students who are pursuing a degree in artificial intelligence at the British University in Dubai developed me.",
+            "I was built by a team of students who are majoring in artificial intelligence at the British University in Dubai.",
+            "My designers are a group of students studying artificial intelligence at the British University in Dubai.",
+            "I was programmed by a team of students who are pursuing a degree in artificial intelligence at the British University in Dubai."
+        ]
+    },
+    {
+        "tag": "bot_father",
+        "patterns": [
+            "Who is your father?",
+            "What is the name of your real father?",
+            "Who created you?",
+            "Who developed you?",
+            "Who is responsible for making you?",
+            "Who built you?"
+        ],
+        "responses": [
+            "My Father is Mohammed Dorgham, and he is the one who created me with his team that is studying artificial intelligence at the British University in Dubai.",
+            "The name of my real father is Mohammed Dorgham, and he created me with his team that is studying artificial intelligence at the British University in Dubai.",
+            "I was created by a team of students studying artificial intelligence at the British University in Dubai, led by my father, Mohammed Dorgham.",
+            "My father is Mohammed Dorgham, and he is the one responsible for making me with his team that is studying artificial intelligence at the British University in Dubai.",
+            "Mohammed Dorgham is my father, and he built me along with his team that is studying artificial intelligence at the British University in Dubai.",
+            "I was developed by a team of students studying artificial intelligence at the British University in Dubai, led by my father, Mohammed Dorgham."
+        ]
+    },
+      {
+        "tag": "motivation",
+        "patterns": ["Can you give me some motivation to work out today?", 
+        "How can I stay motivated to exercise?"],
+        "responses": ["Of course! Exercise is a great way to improve your mental and physical health, boost your energy levels, and reduce stress. Remember why you started your fitness journey and focus on your goals. Try setting achievable goals and rewarding yourself when you reach them. And don't forget to celebrate your progress along the way!",
+    "Sure, I'd be happy to provide some motivation to follow a diet:\n Eating a healthy, balanced diet can have numerous benefits for your physical and mental health.\n By fueling your body with nutrient-dense foods, you can improve your energy levels, boost your immune system, reduce your risk of chronic diseases, and maintain a healthy weight :)"]
+      },
+      {
+          "tag": "calculate_bmi",
+          "patterns": [
+              "What is my BMI?",
+              "Can you calculate my BMI?",
+              "How do I calculate my BMI?"
+          ],
+          "responses": [
+              "Sure, I can help you calculate your BMI. Please enter your weight (in kilograms), height (in meters), and age (in years)."
+          ]
+      },
+      {
+        "tag": "fitness",
+        "patterns": ["What is fitness?", "Why is fitness important?", "How can I improve my fitness level?"],
+        "responses": [
+          "Fitness refers to the overall health and well-being of your body, including your cardiovascular health, muscular strength and endurance, flexibility, and body composition. Regular physical activity and exercise can help improve your fitness level, which can reduce the risk of chronic diseases, improve mental health, and increase overall quality of life. Some ways to improve your fitness level include engaging in regular physical activity, following a balanced diet, and getting enough rest and recovery."
+        ,
+      "Improving your fitness level involves engaging in regular physical activity and exercise, following a balanced diet, and getting enough rest and recovery. Here are some specific tips to improve your fitness level: Incorporate aerobic exercise:\n 1. Engage in moderate-intensity aerobic exercise such as brisk walking, cycling, or swimming for at least 150 minutes per week, or vigorous-intensity aerobic exercise such as running or high-intensity interval training (HIIT) for at least 75 minutes per week. \n 2. Include strength training: Incorporate strength training exercises such as weight lifting, bodyweight exercises, or resistance band exercises at least two days per week to build muscle mass and improve muscular strength and endurance."]
+      },
+      {
+        "tag": "health",
+        "patterns": ["How can I be a healthy person?", 
+        "What does it mean to be healthy?",
+         "Why is health important?",
+         "What is health?"],
+        "responses": [" Being a healthy person involves taking care of your physical, mental, and emotional well-being through a variety of lifestyle choices and habits. Here are some key ways to promote good health: Engage in regular physical activity: Aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week, along with muscle-strengthening activities at least two days per week. Follow a balanced and nutritious diet: Eat a variety of nutrient-dense foods such as fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid processed foods, sugary drinks, and excessive amounts of saturated and trans fats.  ",
+          "Being healthy means taking care of your physical, mental, and emotional well-being. This includes eating a balanced diet, engaging in regular physical activity, getting enough rest and sleep, managing stress, and avoiding harmful behaviors such as smoking or excessive alcohol consumption. Prioritizing your health can help reduce the risk of chronic diseases, improve mental health, and increase overall quality of life.",
+      "Health can be defined as the overall state of physical, mental, and social well-being, not merely the absence of disease or infirmity. It encompasses all aspects of an individual's life, including their physical condition, ability to function, emotional state, social relationships, and environmental factors that may impact their well-being."
+      ]
+      },
+      {
+        "tag": "lose_weight",
+        "patterns": ["Why can't I lose weight?", "Why am I not losing weight?", "How can I lose weight?"],
+        "responses": ["Losing weight can be a complex process that involves many factors, including diet, physical activity, sleep, and stress management. If you're having trouble losing weight, it's important to evaluate these factors and make sure you're following a healthy and sustainable approach. This may involve making adjustments to your diet and exercise routine, seeking support from a healthcare provider or registered dietitian, and focusing on long-term habits rather than quick fixes.",
+      "Losing weight can be a complex process that involves creating a calorie deficit, which means consuming fewer calories than you burn through physical activity and daily living. Here are some specific tips for losing weight in a healthy and sustainable way: \n 1. Follow a balanced and nutritious diet: Eat a diet that is rich in nutrient-dense foods such as fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid processed foods, sugary drinks, and excessive amounts of saturated and trans fats. Try to create a calorie deficit by reducing portion sizes, choosing lower-calorie alternatives, and tracking your food intake. \n 2. Engage in regular physical activity: Aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week, along with muscle-strengthening activities at least two days per week. Exercise can help create a calorie deficit and improve overall health and well-being."]
+      },
+      {
+        "tag": "gain_weight",
+        "patterns": ["Why can't I gain weight?", "Why am I not gaining weight?", "How can I gain weight?"],
+        "responses": [
+          "Gaining weight can be a challenging process that involves consuming more calories than you burn through physical activity and daily living. If you're having trouble gaining weight, it's important to evaluate your diet and make sure you're consuming enough calories and nutrients to support weight gain. This may involve incorporating more calorie-dense foods into your diet, eating more frequently throughout the day, and engaging in strength-training exercises to build muscle mass.",
+        "Eat frequently: Eat small, frequent meals throughout the day to increase your daily calorie intake. Aim to eat every 2-3 hours to keep your body in a calorie surplus. \n Get enough rest and recovery: Aim for 7-9 hours of sleep per night, and prioritize rest and recovery days in your exercise routine to allow your body to recover and repair."]
+      },
+      {
+        "tag": "frequency",
+        "patterns": ["How often should I exercise?", "How often should I weigh myself?", "How often should I see a doctor?"],
+        "responses": ["The frequency of exercise, weighing yourself, and seeing a doctor can depend on a variety of factors, including your age, health status, andindividual needs. Generally, it's recommended to engage in at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week for overall health. Weighing yourself once a week or less is generally sufficient for tracking progress and avoiding obsessive behavior. Seeing a doctor for regular check-ups and screenings can depend on your age and health status, but it's generally recommended for adults to have a physical exam every 1-2 years."]
+      }
+      ,
+      {
+          "tag": "personalized_diet_plan",
+          "patterns": [
+              "Can you create a personalized diet plan for me?",
+              "I need help with my diet plan",
+              "Can you suggest a healthy diet plan for me?",
+              "What should I eat to lose/gain weight?",
+              "What kind of diet should I follow?",
+              "Can you recommend a diet plan for me?"
+          ],
+          "responses": [
+              "Sure, I'd be happy to help you create a personalized diet plan. Can you tell me about your fitness level? Are you a beginner, intermediate, or advanced in following a diet?"
+          ]
+      },
+      {
+          "tag": "personalized_workout_plan",
+          "patterns": [
+              "Can you create a personalized workout plan for me?",
+              "I need help with my workout plan",
+              "Can you suggest a workout plan for me?",
+              "What kind of exercises should I do to lose/gain weight?",
+              "What kindof workout plan should I follow?",
+              "Can you recommend a workout plan for me?"
+          ],
+          "responses": [
+              "Sure, I'd be happy to help you create a personalized workout plan. Can you tell me about your fitness level? Are you a beginner, intermediate, or advanced exerciser"
+          ]
+      },
+      {
+        "tag": "healthy_lifestyle",
+        "patterns": [
+            "What are some healthy foods?",
+            "Can you suggest some healthy drinks?",
+            "What foods should I avoid?",
+            "How can I maintain a healthy lifestyle?",
+            "What are some tips for living a healthy life?"
+        ],
+        "responses": [
+            "There are many healthy foods and drinks you can incorporate into your diet, such as fruits, vegetables, lean protein, whole grains, and water. It's also important to avoid processed and high-sugar foods. To maintain a healthy lifestyle, it's important to exercise regularly, get enough sleep, manage stress, and avoid harmful habits like smoking and excessive alcohol consumption. Would you like more information on any of these topics?"
+        ]
+    },
+    {
+        "tag": "fitness_health",
+        "patterns": [
+            "What are some benefits of exercise?",
+         "How much exercise should I do per week?", 
+         "What are some common health issues that can be prevented with exercise?", 
+         "What are some healthy snacks I can eat?", "How can I improve my sleep quality?"],
+        "responses": ["Exercise can improve cardiovascular health, increase muscle strength and endurance, boost energy levels, reduce stress and anxiety, and improve mood.",
+         "The American Heart Association recommends at least 150 minutes of moderate-intensity exercise per week, or 75 minutes of vigorous-intensity exercise per week.", 
+         "Exercise can help prevent conditions like heart disease, stroke, type 2 diabetes, and certain types of cancer.", 
+         "Some healthy snack options include fruits, vegetables, nuts, seeds, whole-grain crackers, and hummus.",
+          "To improve sleep quality, try establishing a consistent sleep schedule, creating a relaxing sleep environment, avoiding caffeine and alcohol before bedtime, and engaging in relaxation techniques like deep breathing or meditation."]
+      },
+    {
+      "tag": "junk_food",
+      "patterns": [
+          "What are some examples of junk food?",
+          "Why is junk food bad for me?",
+          "How can I avoid eating junk food?",
+          "What are some healthy alternatives to junk food?"
+      ],
+      "responses": [
+          "Junk food typically refers to high-calorie, low-nutrient foods that are often processed and contain added sugars, salt, and unhealthy fats. Examples include candy, soda, chips, and fast food. Eating too much junk food can lead to weight gain, poor nutrition, and an increased risk of chronic diseases like diabetes and heart disease. To avoid eating junk food, try to plan your meals and snacks in advance, keep healthy options on hand, and limit your exposure to advertising and other triggers. Some healthy alternatives to junk food include fresh fruit, vegetables, nuts, and whole-grain snacks."
+      ]
+  },
+      {
+          "tag": "fallback",
+          "patterns": [
+              "I'm not sure",
+              "I don't know",
+              "Can you repeat that?",
+              "Sorry, I didn't understand"
+          ],
+          "responses": [
+              "I'm sorry, I didn't understand. Can you please rephrase your question or request?",
+              "I'm sorry, I didn't catch that. Can you please provide more information or clarify your question?",
+              "I'm sorry, I'm not sure I understand. Can you please repeat your question or request?",
+              "I'm sorry, I'm not sure what you're asking. Can you please provide more context or information?"
+          ]
+      }
+  ]
+}
