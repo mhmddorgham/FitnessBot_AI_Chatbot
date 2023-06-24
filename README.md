@@ -1,3 +1,5 @@
+""  
+
 from speech_recognition import Microphone, Recognizer
 import djitellopy as tello
 import cv2
@@ -92,3 +94,6 @@ while True:
     image = cv2.resize(image, (360, 240))
     cv2.imshow("DRONE VIEW", image)
     cv2.waitKey(1)
+
+
+""
