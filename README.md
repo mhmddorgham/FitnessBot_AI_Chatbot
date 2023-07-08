@@ -1,2 +1,8 @@
 ### Introduction:
 The use of Artificial Intelligence (AI) in the health and fitness industry has gained considerable attention in recent years. AI-powered chatbots have been developed to assist individuals in achieving their fitness goals by providing personalized workout and diet plans(Yu, Beam & Kohane 2018). These chatbots use deep learning and natural language processing techniques to understand and respond to user queries, thereby providing a more personalized and effective fitness experience(Sqalli et al. 2021).
+
+The development of AI-powered chatbots in the health and fitness industry has the potential to transform the way individuals approach their fitness goals(Wahl et al. 2018). By providing personalized workout and diet plans based on a user's BMI, these chatbots can help individuals achieve their fitness goals in a more efficient and effective manner. Additionally, chatbots can provide general information on fitness, health, nutrition, weight loss/gain, and motivational advice, making them a valuable resource for individuals looking to improve their overall health(Yu, Beam & Kohane 2018).
+
+
+The use of neural networks, a crucial aspect of deep learning, is at the core of the Fatness Chatbot's capabilities(Chowdhury 2003). The chatbot uses neural networks to handle and analyze massive volumes of data using frameworks like TensorFlow or PyTorch, allowing it to learn from practical situations and derive insightful conclusions(Halácsy 2006). These networks provide the chatbot the ability to discern trends in user input, find pertinent keywords, and produce context-sensitive answers. The chatbot continually improves its comprehension and answer creation as it converses with more people, resulting in a unique and useful user experience.
+
