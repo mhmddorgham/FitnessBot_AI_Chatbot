@@ -1,4 +1,4 @@
-### Introduction:
+## Introduction:
 The use of Artificial Intelligence (AI) in the health and fitness industry has gained considerable attention in recent years. AI-powered chatbots have been developed to assist individuals in achieving their fitness goals by providing personalized workout and diet plans(Yu, Beam & Kohane 2018). These chatbots use deep learning and natural language processing techniques to understand and respond to user queries, thereby providing a more personalized and effective fitness experience(Sqalli et al. 2021).
 
 The development of AI-powered chatbots in the health and fitness industry has the potential to transform the way individuals approach their fitness goals(Wahl et al. 2018). By providing personalized workout and diet plans based on a user's BMI, these chatbots can help individuals achieve their fitness goals in a more efficient and effective manner. Additionally, chatbots can provide general information on fitness, health, nutrition, weight loss/gain, and motivational advice, making them a valuable resource for individuals looking to improve their overall health(Yu, Beam & Kohane 2018).
@@ -6,3 +6,30 @@ The development of AI-powered chatbots in the health and fitness industry has th
 
 The use of neural networks, a crucial aspect of deep learning, is at the core of the Fatness Chatbot's capabilities(Chowdhury 2003). The chatbot uses neural networks to handle and analyze massive volumes of data using frameworks like TensorFlow or PyTorch, allowing it to learn from practical situations and derive insightful conclusions(Halácsy 2006). These networks provide the chatbot the ability to discern trends in user input, find pertinent keywords, and produce context-sensitive answers. The chatbot continually improves its comprehension and answer creation as it converses with more people, resulting in a unique and useful user experience.
 
+## Design Process and Methodology :
+The problem we are trying to solve with our AI fitness chatbot is the lack of personalized guidance and support for individuals who are trying to achieve their fitness goals(Lamb, Brodie & Roberts 1988). Many people find it challenging to develop and maintain a fitness routine that is effective and sustainable, especially if they have limited knowledge or experience in this area (Lamb, Brodie & Roberts 1988) .
+
+Traditional fitness programs and personal trainers can be expensive and inaccessible for many individuals, making it difficult for them to get the guidance and support they need(Eackles 2020). Furthermore, generic fitness plans that do not take into account the user's specific needs, preferences, and limitations may not be effective or sustainable in the long term(Eackles 2020).
+
+Our AI fitness chatbot addresses these issues by providing personalized recommendations that are tailored to the user's BMI, fitness goals, preferences, and limitations. By using deep learning and natural language processing techniques, the chatbot can understand the user's needs and provide tailored recommendations that are specific to their goals and limitations. This personalized approach can help individuals achieve their fitness goals in a more effective and sustainable way, without the need for expensive personal trainers or generic fitness programs.
+
+## Data Collection:
+We collected a dataset of user profiles that included information such as age, weight, height, gender, and fitness goals. We also collected data on workout plans and diet plans that were recommended by fitness experts for individuals with specific BMIs. In addition to sourced our data from various publicly available sources, including fitness blogs, websites, and forums. We also collected data from fitness apps and wearable devices that track user activity and provide personalized recommendations.
+
+## Data Preprocessing:
+We used Tensorflow, Keras, and NLTK. Our data were stored in a JSON file named "intents.json". We loads the intents from this file and extracts the words, classes, and documents from the intent patterns. Each document is a tuple containing the list of words in the intent pattern and the corresponding tag (class) for that pattern.
+
+The words are then lemmatized and cleaned by removing any irrelevant characters, such as punctuation marks. The remaining words are sorted and saved to a file named "words.pkl". The classes are also sorted and saved to a file named "classes.pkl". This preprocessing step ensures that the data is in a suitable format for training the deep learning model.
+Lemmatization and tokenization are two important techniques used in natural language processing to preprocess textual data for machine learning models(Halácsy 2006).
+
+Tokenization involves breaking up a sentence or a document into individual words or tokens. This is often the first step in the preprocessing pipeline, as it allows the text to be converted into a format that can be more easily processed by machine learning algorithms(Chowdhury 2003). There are several techniques for tokenization, including simple whitespace splitting, rule-based techniques, and machine learning-based techniques(Halácsy 2006).
+
+Lemmatization, on the other hand, is the process of reducing a word to its base or dictionary form, known as a lemma. This process is important because it allows different forms of the same word to be treated as the same word, which can improve the accuracy of machine learning models(Halácsy 2006). For example, the words "running," "ran," and "runs" can all be reduced to the lemma "run".
+
+The lemmatization process typically involves using a dictionary or a set of rules to map each word to its lemma. This can be a challenging task, as many words can have multiple lemmas depending on their context. However, advances in natural language processing have led to the development of sophisticated algorithms that can accurately perform lemmatization in most cases(Chowdhury 2003).
+
+Next, we created a training set by creating a bag of words for each document. The bag of words is a binary vector indicating whether each word in the "words" list is present in the document or not. This step involves iterating over each document and checking if each word in the "words" list is present in the document. If a word is present, a 1 is added to the bag of words for that document; otherwise, a 0 is added. The training set is then shuffled to prevent overfitting(Aleedy, Shaiba & Bezbradica 2019).
+
+The deep learning model is developed using the Keras Sequential API. The model consists of three dense layers with 128, 64, and 32 units respectively, and each layer is followed by a dropout function to prevent overfitting. The output layer has a number of units equal to the number of classes in the training data and uses the softmax activation function to output a probability distribution over the classes(Schmidhuber 2015).
+
+The model is compiled using the categorical cross-entropy loss function, the Adam optimizer, and the accuracy metric(Chowdhury 2003). The model is then trained on the training set for 200 epochs with a batch size of 5. The trained model is saved to a file named "chatbot_model.h5".
