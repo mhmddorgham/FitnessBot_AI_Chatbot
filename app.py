@@ -1,3 +1,4 @@
+# Path to folder:  D:\DesktopFiles\GitHub\FitnessBot>
 from flask import session
 import random
 import json
