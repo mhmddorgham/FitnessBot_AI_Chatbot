@@ -25,11 +25,17 @@ classes = pickle.load(open("classes.pkl", 'rb'))
 
 model = load_model("chatbot_model.h5")
 
+# tokenizes it into individual words and lemmatize it
+
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
     return sentence_words
+
+# The bag of words representation is a simple and efficient way to represent text data in a numerical format that can be used as input to machine learning algorithms.
+# creates a "bag of words" representation of the sentence. This means creating a list of zeros with the same length as the total number of words in the chatbot's vocabulary, and then setting the index of each word in the bag to 1 if it appears in the cleaned-up sentence.
+# bag of words" is a way to represent text data as a numerical vector.
 
 
 def bag_of_words(sentence):
@@ -40,6 +46,8 @@ def bag_of_words(sentence):
             if word == w:
                 bag[i] = 1
     return np.array(bag)
+
+# The function returns a list of the most likely intents and their associated probabilities.
 
 
 def predict_class(sentence):
@@ -52,6 +60,8 @@ def predict_class(sentence):
     for r in results:
         return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
     return return_list
+
+# It uses the most likely intent to select a random response from the list of responses
 
 
 def get_response(intents_list, intents_json):
